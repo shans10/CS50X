@@ -1,0 +1,70 @@
+body {
+    color: white;
+    background: #1d2021;
+    font-family: "Cairo", sans-serif;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.specs {
+    overflow-x: hidden;
+}
+
+#car1 {
+    width:100%;
+}
+
+/* Footer */
+footer {
+    color: white;
+    font-size: 15px;
+    background: #1d2021;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    overflow: auto;
+}
+
+.empty {
+    width: 500px;
+    min-height: 30px;
+}
+
+.spec_img {
+    display: block;
+    height: 70ex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.car {
+    height: 300px;
+}
+
+.form-book {
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suc-img {
+    height: 500px;
+}

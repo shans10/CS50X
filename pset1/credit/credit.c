@@ -10,7 +10,7 @@ int main(void)
 {
     int n, flag = 0;
     string c;
-    // This do-while loop prompts user for a valid number whis comprises of only digits 0-9.
+    // This do-while loop prompts user for a valid number which comprises of only digits 0-9.
     do
     {
         c = get_string("Number: ");
@@ -57,7 +57,7 @@ int main(void)
     }
     else if (n == 16)
     {
-        // CHecking for MASTERCARD.
+        // Checking for MASTERCARD.
         if (c[0] == '5' && (c[1] == '1' || c[1] == '2' || c[1] == '3' || c[1] == '4' || c[1] == '5'))
         {
             int v = luhn(c);
@@ -117,13 +117,13 @@ int luhn(string c)
     int a[8], b[8];
     int j = 0, k = 0;
     int sum = 0;
-    // Converting every other char of credit card number starting from last second into int and storing it into an int array
+    // Converting every other char of credit card number starting from last second into int and storing it into an int array.
     for (int i = n - 2; i >= 0; i -= 2)
     {
         a[j] = c[i] - '0';
         j++;
     }
-    // Converting every other char of credit card number starting from last into int and storing it into an int array
+    // Converting every other char of credit card number starting from last into int and storing it into an int array.
     for (int i = n - 1; i >= 0; i -= 2)
     {
         b[k] = c[i] - '0';
@@ -133,7 +133,7 @@ int luhn(string c)
     {
         // Multiplying every other number by 2 starting from last second.
         a[i] *= 2;
-        // Adding the digits of doubled numbers as well adding remaining numbers.
+        // Adding the digits of doubled numbers as well as adding remaining numbers.
         sum = sum + a[i] / 10 + a[i] % 10 + b[i];
     }
     if (sum % 10 == 0)

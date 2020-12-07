@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- My Personal CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Homepage</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="icons/electric-car.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="specs.html">Specifications</a>
+                    <a class="nav-item nav-link" href="pricing.html">Pricing</a>
+                    <a class="nav-item nav-link active" href="book.html">Book Now  <span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="empty"></div>
+
+        <form onsubmit="success();" class="form-book" action="success.html">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4 email" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Phone Number</label>
+                    <input  class="form-control" placeholder="Phone Number">
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <select class="custom-select">
+                <option selected>Select Car Model</option>
+                <option value="1">eCar-1</option>
+                <option value="2">eCar-2</option>
+                <option value="3">eCar-3</option>
+                <option value="4">eCar-4</option>
+            </select>
+
+            <div class="empty"></div>
+
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Delhi</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Punjab</option>
+                        <option>Uttarakhand</option>
+                        <option>Uttar Pradesh</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Agree to Terms and Conditions
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Credit to the person who created the top left logo used -->
+        <footer>
+            <div class="credit">Top Left Car Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- My Person Script -->
+        <script src="main.js"></script>
+
+    </body>
+</html>
